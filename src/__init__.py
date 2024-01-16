@@ -32,14 +32,16 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate, MigrateCommand
 from werkzeug.middleware.proxy_fix import ProxyFix
 from flask_cors import CORS
-from flask_script import Server, Manager
+from flask_script import Manager, Server
 from flask_marshmallow import Marshmallow
 from dotenv import load_dotenv
 from prometheus_flask_exporter import PrometheusMetrics
 from flask_session import Session
 
+# Load environment variables
 load_dotenv()
 
+# Create and configure the Flask app
 app = Flask(__name__)
 app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_TYPE"] = "filesystem"
@@ -47,19 +49,25 @@ Session(app)
 CORS(app)
 app.config.from_object('config')
 app.wsgi_app = ProxyFix(app.wsgi_app)
-manager = Manager(app)
-manager.add_command("runserver", Server(host='0.0.0.0'))
 
+# Initialize Flask extensions
 db = SQLAlchemy(app)
 ma = Marshmallow(app)
 rest_api = restful.Api(app)
-
-import src.fizzbuzz.fizzbuzz_router
-
 migrate = Migrate(app, db)
+
+# Flask-Script Manager
+manager = Manager(app)
+manager.add_command("runserver", Server(host='0.0.0.0'))
 manager.add_command('db', MigrateCommand)
 
+# Configure logging
 logging.basicConfig(level=logging.INFO)
-logging.info("Setting LOGLEVEL to INFO")
+logging.info("Configuring logging level to INFO")
+
+# Configure Prometheus Metrics
 metrics = PrometheusMetrics(app)
-metrics.info("app_info", "App Info, Promotheus Metrics Start", version="1.0.0")
+metrics.info("application_info", "Application Info: Prometheus Metrics Started", version="1.0.0")
+
+# Import routes
+import src.fizzbuzz.fizzbuzz_router
