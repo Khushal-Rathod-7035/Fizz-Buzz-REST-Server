@@ -1,4 +1,4 @@
-"""Implements a Flask RESTful API endpoint at '/rest/api/fizz-buzz-logic' to handle GET requests,
+"""Implements a Flask RESTful API endpoint at '/rest/api/fizz-buzz' to handle GET requests,
 generating a Fizz-Buzz sequence based on specified parameters with error handling using
 the 'fizzbuzz_case_handler' decorator."""
 import flask_restful as restful
@@ -9,7 +9,7 @@ from src.handler.case_handler import fizzbuzz_case_handler
 
 
 class FizzBuzzLogicAPI(restful.Resource):
-    """Handles a GET request to the '/rest/api/fizz-buzz-logic' endpoint.
+    """Handles a GET request to the '/rest/api/fizz-buzz' endpoint.
     Returns:
         str: representation of the Fizz-Buzz sequence based on the provided parameters.
     """
@@ -38,16 +38,13 @@ class FizzBuzzLogicAPI(restful.Resource):
         limit = args['limit']
         str1 = args['str1']
         str2 = args['str2']
-        result = []
-        for num in range(1, limit + 1):
-            output = ""
-            if num % int1 == 0:
-                output += str1
-            if num % int2 == 0:
-                output += str2
-            if not output:
-                output = str(num)
-            result.append(output)
+        result = [
+            str1 + str2 if i % int1 == 0 and i % int2 == 0 else
+            str1 if i % int1 == 0 else
+            str2 if i % int2 == 0 else
+            str(i)
+            for i in range(1, limit + 1)
+        ]
         result = ','.join(result)
 
         request_entry = FizzBuzzStats.query.filter_by(int1=int1, int2=int2,

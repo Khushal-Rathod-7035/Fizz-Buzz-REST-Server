@@ -21,7 +21,6 @@ Usage:
     - Run the application with 'manager.run()' to start the server.
     - Use Flask commands for database migrations ('db migrate', 'db upgrade').
     - Configure routes in the 'src.fizzbuzz.fizzbuzz_router' module.
-    - Access Prometheus metrics at the '/metrics' endpoint.
 
 Note: Ensure proper configuration in the 'config' module for database and other settings.
 """

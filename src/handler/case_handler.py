@@ -20,9 +20,9 @@ def fizzbuzz_case_handler(func):
         int2 = args_from_request['int2']
         limit = args_from_request['limit']
 
-        if int1 <= 0 or int2 <= 0 or limit <= 0:
-            return {"error": "Invalid parameters. All parameters should "
-                    "be positive and non-zero."}, 400
+        if int1 <= 0 or int2 <= 0 or limit < 0:
+            return {"error": "Invalid parameters. int1 and int2 Parameters should "
+                    "be positive and non-zero. limit Parameters should be positive."}, 400
         try:
             return func(*args, **kwargs)
         except ZeroDivisionError:

@@ -8,8 +8,8 @@ def export_to_env(file_yaml_loc, file_env_loc):
     """Convert environments/{development or production}-env.yml file to .env file.
 
         Args:
-            yaml_file (str): Path to the YAML file.
-            env_file (str): Path to the .env file.
+            file_yaml_loc (str): Path to the YAML file.
+            file_env_loc (str): Path to the .env file.
         """
     try:
         with open(file_yaml_loc, 'r', encoding='utf-8') as file_yaml:

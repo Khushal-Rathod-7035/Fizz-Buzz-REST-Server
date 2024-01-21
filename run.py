@@ -14,8 +14,8 @@ def create_manager():
     """Creates a Flask-Script Manager for command-line tasks.
 
     The manager facilitates the execution of commands such as
-    creating migration scripts ('db migrate') and upgrading the
-    database to the latest migration version ('db upgrade').
+    creating migration scripts ('python run.py db revision -m "CREATE TABLE fizz_buzz_stats') and upgrading the
+    database to the latest migration version ('python run.py db upgrade').
     It serves as a command-line interface for managing various
     aspects of the REST server.
     """
