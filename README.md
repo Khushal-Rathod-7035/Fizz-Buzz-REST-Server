@@ -5,9 +5,11 @@
 The Fizz-Buzz REST Server is a Flask-based web application that implements the classic Fizz-Buzz logic through a REST API. It provides the capability to generate Fizz-Buzz sequences based on user-defined parameters and offers a statistical endpoint to retrieve information about the most used request.
 
 ## Features
+- **API documentation:** https://github.com/Khushal-Rathod-7035/Fizz-Buzz-REST-Server/blob/master/documentation/API_documentation
 - **Fizz-Buzz Logic:** Replace multiples of specified integers with corresponding strings.
 - **Fizz-Buzz Endpoint:** Generate Fizz-Buzz sequences with customizable parameters.
 - **Statistical Endpoint:** Retrieve information about the most used Fizz-Buzz request.
+- **List of third-party libraries used and short description:** https://github.com/Khushal-Rathod-7035/Fizz-Buzz-REST-Server/blob/master/documentation/third-party_libraries
 
 ## Getting Started
 
@@ -29,11 +31,11 @@ The Fizz-Buzz REST Server is a Flask-based web application that implements the c
 ### Installation
 1. Clone the repository:
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/Khushal-Rathod-7035/Fizz-Buzz-REST-Server.git
     ```
 2. Navigate to the project directory:
     ```bash
-    cd fizz-buzz-rest-server
+    cd Fizz-Buzz-REST-Server
     ```
 3. Create and activate a virtual environment:
     ```bash
@@ -43,10 +45,6 @@ The Fizz-Buzz REST Server is a Flask-based web application that implements the c
 4. Install dependencies:
     ```bash
     pip3 install -r requirements.txt
-    ```
-5. Install ansible:
-    ```bash
-    pip install ansible
     ```
 
 ### Configuring Environment Variables
