@@ -1,0 +1,49 @@
+Fizz-Buzz REST Server API Documentation
+Base URL
+The base URL for all endpoints is http://0.0.0.0:5000.
+
+1. Generate Fizz-Buzz Sequence
+Endpoint: GET /rest/api/fizz-buzz
+Generate a Fizz-Buzz sequence based on user-defined parameters.
+
+Parameters:
+int1 : Integer - Multiples of this number replaced with str1.
+int2 : Integer - Multiples of this number replaced with str2.
+limit : Integer - Upper limit for generating the Fizz-Buzz sequence.
+str1 : String - String replacement for multiples of int1.
+str2 : String - String replacement for multiples of int2.
+
+Example:
+GET http://0.0.0.0:5000/rest/api/fizz-buzz?int1=3&int2=5&limit=15&str1=fizz&str2=buzz
+
+Response:
+"1,2,fizz,4,buzz,fizz,7,8,fizz,buzz,11,fizz,13,14,fizzbuzz"
+
+2. Statistical Endpoint
+Endpoint: GET /fizzbuzz/stats
+Retrieve information about the most used Fizz-Buzz request.
+
+Parameters:
+None
+
+Example:
+GET http://0.0.0.0:5000/rest/api/fizz-buzz-stats
+
+Response:
+{
+    "id": 2,
+    "int1": 3,
+    "int2": 5,
+    "limit": 15,
+    "str1": "fizz",
+    "str2": "buzz",
+    "hits": 16
+}
+
+Error Handling
+For any invalid or missing parameters, the server will return an appropriate error response with details.
+
+Status Codes
+200 OK: Successful request.
+400 Bad Request: Invalid request parameters.
+500 Internal Server Error: Server-side error.

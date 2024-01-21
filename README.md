@@ -15,7 +15,6 @@ The Fizz-Buzz REST Server is a Flask-based web application that implements the c
 - Python 3.6.8 (download from https://www.python.org/downloads/release/python-368/)
 - python -m venv venv (to create virtual environment)
 - pip (Python package installer)
-- ansible (to encrypt and decrypt environments file and exporting values to .env file)
 
 ## Table of Contents
 

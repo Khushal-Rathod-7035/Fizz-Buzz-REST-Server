@@ -1,5 +1,5 @@
 # ENVIRONMENT - Development API
 # database
-DEV_DB_HOST="sqlite:///"
-DEV_DB_NAME="fizz-buzz.db"
-HOST_ENVIRONMENT="development"
+DEV_DB_HOST: sqlite:///
+DEV_DB_NAME: fizz-buzz.db
+HOST_ENVIRONMENT: development

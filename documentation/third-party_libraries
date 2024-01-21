@@ -1,0 +1,206 @@
+alembic==1.0.0
+Description: Alembic is used for database migrations in Flask applications. It provides a way to manage database schema changes over time.
+
+aniso8601==9.0.1
+Description: Aniso8601 is a Python library for parsing and formatting dates and times according to the ISO 8601 standard. It may be used for handling date/time inputs in the API.
+
+astroid==2.8.6
+Description: Astroid is used as a library for abstract syntax trees (AST) in Python. It is often utilized with pylint for static code analysis.
+
+atomicwrites==1.4.1
+Description: Atomicwrites is a library for atomic file writes. It ensures that file writes are atomic, which can be beneficial for preventing corruption during concurrent writes.
+
+attrs==22.2.0
+Description: Attrs is used for creating classes with attributed access, reducing boilerplate code for class definitions.
+
+bcrypt==3.1.7
+Description: Bcrypt is a password-hashing library that is commonly used for securing user passwords by hashing and salting.
+
+cachelib==0.6.0
+Description: Cachelib is a library for caching in Python. It provides utilities for caching function calls and results.
+
+certifi==2023.11.17
+Description: Certifi provides a curated collection of Root Certificates for validating the authenticity of SSL/TLS certificates.
+
+cffi==1.15.1
+Description: CFFI is a Foreign Function Interface for calling C functions from Python. It may be used for interfacing with C libraries.
+
+charset-normalizer==2.0.12
+Description: Charset-Normalizer is used for normalizing and converting character encodings.
+
+click==8.0.4
+Description: Click is a command-line interface creation kit. It is used for building command-line interfaces for the application.
+
+colorama==0.4.5
+Description: Colorama is a library for adding colored output to terminal text. It may be used for enhancing console output.
+
+dataclasses==0.8
+Description: Dataclasses is part of the Python standard library and is used for creating classes that primarily store data.
+
+flake8==4.0.1
+Description: Flake8 is a tool for linting Python code. It combines multiple linters and helps maintain a consistent coding style.
+
+Flask==1.0.2
+Description: Flask is a lightweight web framework for building web applications in Python. It is the core framework for the server.
+
+Flask-Bcrypt==0.7.1
+Description: Flask-Bcrypt is a Flask extension that provides Bcrypt hashing utilities for password hashing.
+
+Flask-Cors==3.0.6
+Description: Flask-Cors is a Flask extension for handling Cross-Origin Resource Sharing (CORS) in the application.
+
+Flask-Limiter==1.0.1
+Description: Flask-Limiter is a Flask extension for rate limiting. It can be used to limit the number of requests to specific endpoints.
+
+flask-marshmallow==0.11.0
+Description: Flask-Marshmallow is a Flask extension for integrating Marshmallow, a library for object serialization/deserialization.
+
+Flask-Migrate==2.2.1
+Description: Flask-Migrate is an extension for Flask that handles SQLAlchemy database migrations.
+
+Flask-OAuthlib==0.9.6
+Description: Flask-OAuthlib is a Flask extension for providing OAuth support in the application.
+
+Flask-RESTful==0.3.6
+Description: Flask-RESTful is an extension for Flask that simplifies the creation of RESTful APIs.
+
+Flask-Script==2.0.6
+Description: Flask-Script is an extension for Flask that adds support for command-line tasks.
+
+Flask-Session==0.4.0
+Description: Flask-Session is a Flask extension for handling server-side sessions.
+
+Flask-SQLAlchemy==2.3.2
+Description: Flask-SQLAlchemy is an extension for Flask that provides integration with SQLAlchemy, a SQL toolkit and Object-Relational Mapping (ORM) library.
+
+gunicorn==19.9.0
+Description: Gunicorn is a production-ready WSGI server that is commonly used for deploying Flask applications.
+
+idna==3.6
+Description: Idna is a library for handling Internationalized Domain Names in Applications (IDNA).
+
+importlib-metadata==4.2.0
+Description: Importlib-metadata provides access to the metadata of Python packages. It may be used for package introspection.
+
+iniconfig==1.1.1
+Description: Iniconfig is a Python library for parsing and creating INI-style configuration files.
+
+isort==5.10.1
+Description: Isort is a Python utility for sorting import statements alphabetically within Python code files.
+
+itsdangerous==2.0.1
+Description: Itsdangerous is a library for handling data security concerns in web applications, such as token generation.
+
+Jinja2==2.11.1
+Description: Jinja2 is a template engine for Python. It is used for rendering templates in the application.
+
+lazy-object-proxy==1.7.1
+Description: Lazy-Object-Proxy is a fast proxy for Python objects, useful in cases where lazy loading is desirable.
+
+limits==1.6
+Description: Limits is a Python library for rate limiting. It provides utilities for controlling the rate of function calls.
+
+Mako==1.1.1
+Description: Mako is a template engine for Python. It may be used as an alternative template engine in Flask applications.
+
+MarkupSafe==1.1.1
+Description: MarkupSafe is a library for XML/HTML escaping. It is used for escaping strings in templates.
+
+marshmallow==3.4.0
+Description: Marshmallow is an object serialization/deserialization library. Flask-Marshmallow integrates Marshmallow with Flask.
+
+marshmallow-sqlalchemy==0.22.2
+Description: Marshmallow-SQLAlchemy is an extension for Marshmallow that provides integration with SQLAlchemy models.
+
+mccabe==0.6.1
+Description: McCabe is a complexity checker for Python code. It is often used with Flake8 for static code analysis.
+
+oauthlib==2.1.0
+Description: OAuthlib is a library for implementing OAuth1 and OAuth2 providers.
+
+packaging==21.3
+Description: Packaging is a Python library for reading and writing Python package information.
+
+platformdirs==2.4.0
+Description: Platformdirs is a library for finding user and system directories based on the platform.
+
+pluggy==1.0.0
+Description: Pluggy is a plugin management library. It is often used in testing frameworks.
+
+prometheus-client==0.17.1
+Description: Prometheus-Client provides a Python client for Prometheus monitoring. It is used for exposing metrics.
+
+prometheus-flask-exporter==0.23.0
+Description: Prometheus-Flask-Exporter is an extension for Flask that exports metrics to Prometheus.
+
+py==1.11.0
+Description: Py is a library for supporting Python 2 and 3 compatibility.
+
+pycodestyle==2.8.0
+Description: Pycodestyle is a tool for checking Python code against the style conventions outlined in PEP 8.
+
+pycparser==2.21
+Description: Pycparser is a C parser and AST generator written in Python. It may be used in conjunction with CFFI for interfacing with C libraries.
+
+pyflakes==2.4.0
+Description: Pyflakes is a static code analysis tool for detecting errors in Python code.
+
+pylint==2.11.1
+Description: Pylint is a Python static code analysis tool. It checks for errors, coding standards, and more.
+
+pyparsing==3.1.1
+Description: Pyparsing is a library for defining grammars in Python. It may be used in parsing tasks.
+
+pytest==7.0.1
+Description: Pytest is a testing framework for Python. It simplifies the process of writing and executing tests.
+
+python-dateutil==2.8.2
+Description: Python-Dateutil is a library for parsing and manipulating dates and times.
+
+python-dotenv==0.14.0
+Description: Python-Dotenv is a library for reading variables from .env files and automatically adding them to the environment.
+
+python-editor==1.0.4
+Description: Python-Editor is a library for programmatically opening an editor from Python code.
+
+pytz==2023.3.post1
+Description: Pytz is a library for working with timezone information in Python.
+
+PyYAML==6.0.1
+Description: PyYAML is a YAML parser and emitter for Python, providing convenient methods for working with YAML data.
+
+requests==2.27.1
+Description: Requests is a library for making HTTP requests in Python. It simplifies the process of sending HTTP requests and handling responses.
+
+requests-oauthlib==1.1.0
+Description: Requests-OAuthlib is an extension to the Requests library for handling OAuth authentication.
+
+six==1.16.0
+Description: Six is a Python 2 and 3 compatibility library. It provides utilities for writing code that is compatible with both Python versions.
+
+SQLAlchemy==1.2.10
+Description: SQLAlchemy is a SQL toolkit and Object-Relational Mapping (ORM) library for Python. It is used for database interactions in Flask applications.
+
+toml==0.10.2
+Description: Toml is a library for parsing and generating TOML (Tom's Obvious, Minimal Language) files.
+
+tomli==1.2.3
+Description: Tomli is a TOML parser and serializer for Python.
+
+typed-ast==1.5.5
+Description: Typed-Ast is a library for working with Abstract Syntax Trees (AST) with support for type comments.
+
+typing_extensions==4.1.1
+Description: Typing-Extensions provides additional functionality related to the typing module in Python.
+
+urllib3==1.26.18
+Description: Urllib3 is a library for handling HTTP requests in Python. It is often used as a dependency in other HTTP-related libraries.
+
+Werkzeug==0.16.1
+Description: Werkzeug is a utility library for building WSGI (Web Server Gateway Interface) applications. It is a core component of Flask.
+
+wrapt==1.13.3
+Description: Wrapt is a library for decorators, wrappers, and monkey-patching in Python.
+
+zipp==3.6.0
+Description: Zipp is a library for reading and writing ZIP archives in Python.
